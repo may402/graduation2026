@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   <meta charset="UTF-8" />
+  <title>الاختبار القبلي -الموديول السادس </title>
+  <link rel="icon" href="images/graduation.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <!-- ✅ الشريط الأول -->
+  <div class="logos-bar">
+    <div style="display: flex; gap: 15px;">
+     <img src="images/damietta.png" alt="شعار الجامعة" />
+              <img src="images/LOGO.jpg" alt="شعار الكلية" />
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span class="my-name">مي محمد حافظ سبلة</span>
+      <img src="images/may.jpg" alt="مي" class="my-pic" />
+      <div style="text-align: right; margin-right: 10px;">
+  <p style="margin: 0; font-weight: bold; color: #b92272;font-size: 10px "> أدوات التواصل</p>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <a href="https://www.facebook.com/share/19LJPEeQQN/" target="_blank" title="فيسبوك" style="color: #3b5998; font-size: 20px;"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="https://wa.me/201062309203" target="_blank" title="واتساب" style="color: #25D366; font-size: 20px;"><i class='bx bxl-whatsapp'></i></a>
+    <a href="mailto:maysabla5557@gmail.com" title="البريد الإلكتروني" style="color: #EA4335; font-size: 20px;"><i class='bx bxl-gmail'></i></a>
+    </div>
+   </div>
+    </div>
+  </div>
+  <!-- ✅ شريط التنقل -->
+ <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">الصفحة الرئيسية</a></li>
+      <li><a href="instructions.html">تعليمات الاستخدام</a></li>
+      <li><a href="objectives.html">أهداف بيئة التعلم</a></li>
+      <li><a href="tests.html">الاختبارات</a></li>
+      <li><a href="total modules.html">الموديولات  </a></li>
+      <li><a href="contact-us.html">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+ <!-- ✅ محتوى الموديول الأول -->
+  <main>
+  <div class="module-banner">
+    <img src="images/mm6.png" alt="صورة " class="module-img">
+   <div class="module-text">
+      <p class="module-title">
+          <span class="shiny-name small-title">الاختبار القبلي</span>
+      <br>
+      <span class="shiny-name small-title">الموديول السادس</span>  
+      </p>
+    </div>
+  </div>
+   <div class="goal-intro" style="text-align: right; padding: 20px;">
+  <h4 style="color: #0a2afd; line-height: 1.8;">
+    ✦ مرحبا بك عزيزى الطالب/ عزيزتي الطالبة <br>
+  يهدف هذا الاختبار القبلي للموديول السادس إلي
+قياس تحصيلك للجوانب المعرفية المرتبطة بتسليم مشروع التخرج.
+</h4>
+  </h4>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9z6GeKRYybkS7_Sn5SBjc8bEL7LNvgTHik02caEj4hsnTew/viewform?usp=header"
+     target="_blank" 
+     class="cta-button">
+     اضغط هنا لبدء الاختبار القبلي للموديول السادس
+  </a>
+</div>
+
+
+ 
+
+   
+  <!-- ✅ نص تشجيعي وزر ثابت أسفل الصفحة -->
+<p class="note-text">
+  ✅ بعد الإنتهاء من الإجابة عن أسئلة الاختبار القبلي للموديول السادس  ،  انتقل إلى <strong>صفحة الموديول السادس  لدراسته  </strong> .
+</p>
+
+<!-- ✅ زر البدء -->
+    <a href="module6.html" class="cta-button">  الموديول السادس </a>
+ <br>
+
+
+<!-- ✅ زر الرجوع للموديول السابق -->
+<a href="module5.html" class="floating-nav-btn prev" title="الموديول السابق">
+  <i class='bx bx-chevron-right'></i>
+</a>
+
+<!-- ✅ زر التقدم للموديول التالي -->
+<a href="module6.html" class="floating-nav-btn next" title="الموديول التالي">
+  <i class='bx bx-chevron-left'></i>
+</a>
+
+
+  </main>
+<br>
+
+<script>
+
+const avatarRows = document.querySelectorAll('.avatar-row');
+avatarRows.forEach(row => {
+  row.addEventListener('click', () => {
+    row.classList.toggle('active'); // يفتح أو يقفل المحتوى لكل صورة مستقل
+  });
+});
+
+
+
+  const zoomableImages = document.querySelectorAll('.zoomable');
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+
+  zoomableImages.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImage.src = img.src;
+    });
+  });
+
+  modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+</script>
+
+
+
+<script>
+
+const logosBar = document.querySelector('.logos-bar');
+const navBar = document.querySelector('nav');
+
+function adjustNavPosition() {
+  const height = logosBar.offsetHeight;
+  navBar.style.top = `${height}px`;
+}
+
+window.addEventListener('load', adjustNavPosition);
+window.addEventListener('resize', adjustNavPosition);
+</script>
+
+
+
+<script>
+  function toggleContent(element) {
+  element.classList.toggle("open");
+  const content = element.nextElementSibling;
+  if (content && content.classList.contains("accordion-content")) {
+    content.classList.toggle("expanded");
+  }
+}
+</script>
+
+<!-- ✅ نهاية الفوتر وبداية سكربت الوظائف -->
+
+<script>
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
+</script>
+
+
+
+
+
+
+<footer>
+  <p class="footer-info">
+    <span class="uni">جامعة دمياط -</span>
+    <span class="faculty">كلية التربية -</span>
+    <span class="dept">قسم تكنولوجيا التعليم</span>
+    <span class="name"> - مي محمد حافظ سبلة</span>
+    <span class="job">- معيدة بقسم تكنولوجيا التعليم</span>
+  </p>
+  <p class="footer-year">© 2025</p>
+</footer>
+
+</html>

@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   <meta charset="UTF-8" />
+   <title>الموديول الرابع - تنفيذ وإنتاج مشروعات التخرج</title>
+  <link rel="icon" href="images/graduation.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- ✅ الشريط الأول -->
+   <div class="logos-bar">
+    <div style="display: flex; gap: 15px;">
+       <img src="images/damietta.png" alt="شعار الجامعة" />
+              <img src="images/LOGO.jpg" alt="شعار الكلية" />
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span class="my-name">مي محمد حافظ سبلة</span>
+      <img src="images/may.jpg" alt="مي" class="my-pic" />
+      <div style="text-align: right; margin-right: 10px;">
+  <p style="margin: 0; font-weight: bold; color: #b92272;font-size: 10px "> أدوات التواصل</p>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <a href="https://www.facebook.com/share/19LJPEeQQN/" target="_blank" title="فيسبوك" style="color: #3b5998; font-size: 20px;"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="https://wa.me/201062309203" target="_blank" title="واتساب" style="color: #25D366; font-size: 20px;"><i class='bx bxl-whatsapp'></i></a>
+    <a href="mailto:maysabla5557@gmail.com" title="البريد الإلكتروني" style="color: #EA4335; font-size: 20px;"><i class='bx bxl-gmail'></i></a>
+    </div>
+   </div>
+    </div>
+  </div>
+  <!-- ✅ شريط التنقل -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">الصفحة الرئيسية</a></li>
+      <li><a href="instructions.html">تعليمات الاستخدام</a></li>
+      <li><a href="objectives.html">أهداف بيئة التعلم</a></li>
+      <li><a href="tests.html">الاختبارات</a></li>
+      <li><a href="total modules.html">الموديولات  </a></li>
+      <li><a href="contact-us.html">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+ <!-- ✅ محتوى الموديول الأول -->
+  <main>
+  <div class="module-banner">
+    <img src="images/mm4.jpg" alt="صورة " class="module-img">
+
+    <div class="module-text">
+      <p class="module-title">
+        <span class="shiny-name small-title">الموديول الرابع</span>
+      <br>
+      <span class="shiny-name small-title">تنفيذ و إنتاج مشروع التخرج    </span>
+      </p>
+    </div>
+  </div>
+    <!-- ✅ محتوى الموديول -->
+<h4 style="color: #b92272;"> 
+الفيديو التعريفي للموديول الرابع  <br>
+يمكنك مشاهدته من خلال النقر علي الأفاتار 
+</h4>
+
+<!-- ✅ الأفاتار -->
+<div class="video-avatar" onclick="openVideoM4()" style="cursor:pointer; display:inline-block;">
+  <img src="images/avatar-logo.png" alt="عرض الفيديو">
+</div>
+
+<!-- ✅ نافذة الفيديو -->
+<div class="video-popup" id="videoPopupM4" 
+     style="position:fixed; top:0; left:0; right:0; bottom:0; 
+            background:rgba(0,0,0,0.8); display:none; 
+            align-items:center; justify-content:center; z-index:1000;">
+  <div style="position:relative; max-width:800px; width:90%;">
+    <!-- زر الإغلاق -->
+    <span onclick="closeVideoM4()" 
+          style="position:absolute; top:-35px; right:-10px; font-size:28px; color:#fff; cursor:pointer;">✖</span>
+
+    <video id="popupVideoM4" controls preload="none" style="width:100%; border-radius:10px;">
+      <source src="videos/Vm4.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+  </div>
+</div>
+
+<script>
+// ✅ فتح الفيديو
+function openVideoM4() {
+  const popup = document.getElementById("videoPopupM4");
+  const video = document.getElementById("popupVideoM4");
+  popup.style.display = "flex";
+  video.play();
+}
+
+// ✅ إغلاق الفيديو
+function closeVideoM4() {
+  const popup = document.getElementById("videoPopupM4");
+  const video = document.getElementById("popupVideoM4");
+  popup.style.display = "none";
+  video.pause();
+  video.currentTime = 0;
+}
+
+// ✅ إغلاق تلقائي عند انتهاء الفيديو
+document.getElementById("popupVideoM4").addEventListener("ended", closeVideoM4);
+</script>
+
+
+
+  <div class="module-description" onclick="toggleContent(this)">
+  الهدف العام للموديول  الرابع <i class='bx bx-chevron-down'></i>
+</div>
+<div class="accordion-content">
+  <h4 style="color: #333; margin: 0; white-space: nowrap;">
+إنتاج طالب تكنولوجيا التعليم لمشروع التخرج.  </h4>
+  
+</div>
+<div class="module-description" onclick="toggleContent(this)">
+   الأهداف الإجرائية <i class='bx bx-chevron-down'></i>
+</div>
+<div class="accordion-content">
+    <h4 style="color: #0a2afd;"> 
+  بعد الانتهاء من دراسة هذا الموديول يجب أن يكون طالب تكنولوجيا التعليم قادراً على أن:
+</h4>
+<h4 style="color:  #333;">
+ 1.يُوظف المستحدثات التكنولوجية لإنتاج عناصر مشروع التخرج.<br>
+2.  يستخدم البرمجيات التعليمية لإنتاج عناصر مشروع التخرج.<br>
+3. يُنتج عناصر مشروع التخرج.<br>
+4. يعرض عناصر مشروع التخرج بصورة أولية.<br>
+ </h4>
+  </div>
+   <div class="module-description" onclick="toggleContent(this)">
+    المحتوى والأنشطة <i class='bx bx-chevron-down'></i>
+      </div>
+ <div class="accordion-content">
+  <div style="display: flex; align-items: flex-start; flex-direction: row; gap: 20px; margin-top: 20px; direction: rtl;">
+    <div style="text-align: right; margin-bottom: 20px;">
+       <div style="display: flex; align-items: flex-start; gap: 70px;">
+  <!-- ✅ النص -->
+  <div class="activity-text" style="flex: 1;">
+ <h3 style="color: #b92272; font-size: 20px; line-height: 1.9; text-align: justify;">
+بعد الانتهاء من مرحلة التخطيط والتصميم، تبدأ المرحلة التطبيقية لمشروع التخرج، حيث يتم تحويل الأفكار والخطط النظرية إلى منتج عملي رقمي متكامل يمر بخطوات التنفيذ والإنتاج وفق منهجية منظمة.
+</h3>
+ <div style="display: flex; align-items: flex-start; gap: 70px;">
+  <!-- ✅ النص -->
+  <div class="activity-text" style="flex: 1;">
+   <div style="background-color: #f8d7da; 
+            border: 1px solid #f5c2c7; 
+            padding: 8px 16px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: right;
+            font-family: 'Cairo', 'Simplified Arabic', Tahoma, sans-serif;">
+  <h3 style="color: #0a2afd; margin: 0;">
+    1. المرحلة الأولى: 	توظيف المستحدثات التكنولوجية لإنتاج عناصر مشروع التخرج   
+  </h3>
+</div>
+ <h3 style="color: #333; font-size: 20px; line-height: 1.9; text-align: justify;">
+يشير توظيف المستحدثات التكنولوجية في إعداد مشروع التخرج إلى دمج التقنيات الرقمية الحديثة التي طرأت في مجال تكنولوجيا التعليم، والتي تهدف إلى تعزيز فاعلية عملية التعلم وتحسين جودة المنتج النهائي ،
+ويُعد  اختيار المستحدث المناسب جزءًا من مهارات الطالب الأساسية، حيث يجب أن يكون ملائمًا لطبيعة المشروع وأهدافه التعليمية، بما يضمن تحقيق القيمة المضافة المرجوة.  <br>
+وبالتالي، فإن دمج المستحدثات التكنولوجية في مشروع التخرج لا يُعد مجرد إضافة شكلية، بل يمثل شرطًا أساسيًا لتحقيق الجودة والتميز في التصميم التعليمي.
+ ويمكنك دراستها من خلال الفيديو المعروض أمامك:
+   </h3>
+
+<div class="video-container" onclick="openInnerVideo1()">
+  <img src="images/chatbootimg.png" alt="عرض الفيديو">
+  <div class="play-button"></div>
+</div>
+<!-- نافذة الفيديو -->
+<div class="video-popup" id="videoPopupInner1" 
+     style="position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8); display:none; align-items:center; justify-content:center; z-index:1000;">
+  <div style="position:relative; max-width:800px; width:90%;">
+    <!-- زر الإغلاق -->
+    <span onclick="closeInnerVideo1()" 
+          style="position:absolute; top:-35px; right:-10px; font-size:28px; color:#fff; cursor:pointer;">✖</span>
+
+    <video id="popupInnerVideo1" controls preload="none" style="width:100%; border-radius:10px;">
+      <source src="videos/robot.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+  </div>
+</div>
+
+<script>
+function openInnerVideo1() {
+  const popup = document.getElementById("videoPopupInner1");
+  const video = document.getElementById("popupInnerVideo1");
+  popup.style.display = "flex";
+  video.play();
+}
+
+function closeInnerVideo1() {
+  const popup = document.getElementById("videoPopupInner1");
+  const video = document.getElementById("popupInnerVideo1");
+  popup.style.display = "none";
+  video.pause();
+  video.currentTime = 0;
+}
+
+// ✅ إغلاق تلقائي عند انتهاء الفيديو
+document.getElementById("popupInnerVideo1").addEventListener("ended", function() {
+  closeInnerVideo1();
+});
+</script>
+
+
+  </div>
+  </div>
+<br>
+<!-- ✅ العنوان على اليمين -->
+<div style="text-align: right; margin-bottom: 20px;">
+  <div style="background-color: #f8d7da; 
+              border: 1px solid #f5c2c7; 
+              padding: 8px 16px;
+              border-radius: 10px;
+              display: inline-block;
+              font-family: 'Cairo', 'Simplified Arabic', Tahoma, sans-serif;">
+    <h3 style="color: #0a2afd; margin: 0;">
+       2 . المرحلة الثانية:	استخدام البرمجيات التعليمية لإنتاج عناصر مشروع التخرج  
+        </h3>
+        </div>
+         </div>
+<h3 style="color: #333; text-align: justify; font-size: 18px; line-height: 2; font-family: 'Cairo', 'Simplified Arabic', Tahoma, sans-serif;">
+تشير البرمجيات التعليمية إلى التطبيقات والبرامج التي تُستخدم لدعم العملية التعليمية وتسهيل فهم المحتوى وتنمية المهارات لدى المتعلمين، تعد هذه البرمجيات أدوات حيوية تساعد الطالب في تنفيذ الجانب العملي أو التفاعلي من المشروع، مثل إنتاج دروس إلكترونية، تصميم اختبارات تفاعلية، أو تطوير بيئات تعلم افتراضية.
+<!-- ===== أنواع البرمجيات التعليمية - Cards RTL ===== -->
+  <h3 class="right-title">🔹 أنواع البرمجيات التعليمية:</h3>
+<section class="edu-tools" dir="rtl">
+  <div class="edu-grid">
+    <!-- 1: برمجيات إنتاج المحتوى -->
+    <article class="edu-card">
+      <h4>برمجيات إنتاج المحتوى</h4>
+      <p class="edu-desc">تصميم العروض التفاعلية والدروس.</p>
+      <ul class="edu-tags">
+        <li>Articulate</li><li>Captivate</li><li>Canva</li><li>PowerPoint</li>
+      </ul>
+    </article>
+    <!-- 2: أدوات التأليف التعليمية -->
+    <article class="edu-card">
+      <h4>برمجيات التأليف (Authoring)</h4>
+      <p class="edu-desc">بناء وحدات تعليمية كاملة قابلة للنشر.</p>
+      <ul class="edu-tags">
+        <li>iSpring</li><li>GLO Maker</li>
+      </ul>
+    </article>
+    <!-- 3: أنظمة إدارة التعلم -->
+    <article class="edu-card">
+      <h4>أنظمة إدارة التعلم (LMS)</h4>
+      <p class="edu-desc">نشر المحتوى وإدارة الأنشطة والتغذية الراجعة.</p>
+      <ul class="edu-tags">
+        <li>Moodle</li><li>Google Classroom</li>
+      </ul>
+    </article>
+    <!-- 4: تصميم الوسائط المتعددة -->
+    <article class="edu-card">
+      <h4>تصميم الوسائط المتعددة</h4>
+      <p class="edu-desc">إنتاج صور وفيديو وصوت تعليمي.</p>
+      <ul class="edu-tags">
+        <li>Photoshop</li><li>Camtasia</li><li>Audacity</li>
+      </ul>
+    </article>
+    <!-- 5: التقييم الإلكتروني -->
+    <article class="edu-card">
+      <h4>برمجيات التقييم الإلكتروني</h4>
+      <p class="edu-desc">اختبارات وأنشطة تفاعلية لقياس التعلم.</p>
+      <ul class="edu-tags">
+        <li>Quizizz</li><li>Kahoot</li><li>Google Forms</li>
+      </ul>
+    </article>
+  </div>
+</section>
+  <h3 class="right-title">🔹 أيقونات بعض البرمجيات التعليمية:</h3>
+<img src="images/programs.png" class="zoomable-final" 
+     style="width:500px; max-width:100%; cursor:zoom-in; border-radius:10px; display:block; margin:0 auto;">
+<style>
+  :root{
+    --bg:#f7f7fb; --card:#ffffff; --ink:#1f1f29; --muted:#666;
+    --brand:#5a189a; --ring:#e8ddfa; --chip:#f1ecfb;
+  }
+
+  .edu-tools{
+    font-family: "Cairo","Tahoma",sans-serif;
+    max-width: 1100px; margin: 24px auto; padding: 8px 16px;
+    background: transparent;
+  }
+
+  .edu-title{
+    color: var(--brand); font-size: 1.8rem; margin: 12px 0 22px; text-align: right;
+  }
+
+  .edu-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+  }
+
+  /* responsive columns */
+  @media (max-width: 640px){
+    .edu-card{ grid-column: span 12; }
+  }
+  @media (min-width: 641px) and (max-width: 992px){
+    .edu-card{ grid-column: span 6; }
+  }
+  @media (min-width: 993px){
+    .edu-card{ grid-column: span 4; }
+  }
+
+  .edu-card{
+    position: relative;
+    background: var(--card);
+    border-radius: 14px;
+    padding: 18px 16px 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.06);
+    border: 1px solid #eee;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s;
+    isolation: isolate;
+  }
+  .edu-card::before{
+    content:"";
+    position:absolute; inset:0; border-radius: 14px;
+    background: linear-gradient(135deg, rgba(90,24,154,.06), rgba(90,24,154,0));
+    z-index:-1;
+  }
+  
+
+  .edu-desc{ margin: 0 0 10px; color: var(--muted); font-size: .95rem; }
+
+  .edu-tags{
+    list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:0;
+  }
+  .edu-tags li{
+    background: var(--chip); color: var(--brand);
+    border: 1px solid var(--ring);
+    padding: 4px 10px; border-radius: 999px; font-size: .82rem; white-space: nowrap;
+  }
+
+  /* لمسة RTL لطيفة: محاذاة النص يمين افتراضياً */
+  .edu-card, .edu-card *{ text-align: right; }
+</style>
+  <!-- النص -->  
+  <h3 class="right-title">🔹 أهمية استخدام البرمجيات التعليمية في مشروع التخرج :</h3>
+<img src="images/arabic-42.png" class="zoomable-final" 
+     style="width:800px; max-width:100%; cursor:zoom-in; border-radius:10px; display:block; margin:0 auto;">
+<div id="modalFinal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+                      background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:9999;">
+  <img id="imgFinal" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+    <!-- ==== ثالثًا: مهارات يجب أن يتقنها الطالب (Timeline Style) ==== -->
+    <h3 class="right-title">🔹 المهارات الواجب إتقانها عند استخدام البرمجيات التعليمية في مشروع التخرج:</h3>
+<section class="edu-timeline4" dir="rtl">
+  <div class="timeline4">
+    
+    <!-- step 1 -->
+    <div class="timeline4-item">
+      <div class="timeline4-icon">1</div>
+      <div class="timeline4-content">
+        <h4>اختيار البرمجية المناسبة</h4>
+        <p>تحديد الأداة الأنسب لطبيعة المشروع وأهدافه التعليمية.</p>
+      </div>
+    </div>
+    <!-- step 2 -->
+    <div class="timeline4-item">
+      <div class="timeline4-icon">2</div>
+      <div class="timeline4-content">
+        <h4>التعامل الفني مع أدوات التصميم</h4>
+        <p>إتقان استخدام أدوات الإنتاج والتأليف داخل البرمجيات.</p>
+      </div>
+    </div>
+    <!-- step 3 -->
+    <div class="timeline4-item">
+      <div class="timeline4-icon">3</div>
+      <div class="timeline4-content">
+        <h4>تصميم واجهات استخدام</h4>
+        <p>بناء واجهات واضحة، سهلة الاستخدام، وجذابة للمتعلمين.</p>
+      </div>
+    </div>
+    <!-- step 4 -->
+    <div class="timeline4-item">
+      <div class="timeline4-icon">4</div>
+      <div class="timeline4-content">
+        <h4>اختبار المنتج التعليمي</h4>
+        <p>مراجعة المنتج للتأكد من صلاحيته، جودته، وتجربة المستخدم.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .edu-timeline4{ margin:40px auto; max-width:800px; font-family:"Cairo",sans-serif; }
+  .timeline4{ position:relative; padding:10px 0; }
+  .timeline4::before{
+    content:""; position:absolute; right:28px; top:0; bottom:0;
+    width:3px; background:#d5b8ff; border-radius:3px;
+  }
+
+  .timeline4-item{ position:relative; margin-bottom:36px; display:flex; align-items:flex-start; }
+  .timeline4-item:last-child{ margin-bottom:0; }
+
+  .timeline4-icon{
+    width:50px; height:50px; background:#fff; border:3px solid #7b2cbf;
+    border-radius:50%; display:flex; align-items:center; justify-content:center;
+    font-size:22px; color:#7b2cbf; position:relative; right:3px;
+    z-index:1; box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  }
+  .timeline4-content{
+    background:#fff; border-radius:14px; padding:14px 18px;
+    margin-right:18px; flex:1;
+    box-shadow:0 6px 20px rgba(0,0,0,0.06);
+    transition:.25s;
+  }
+  .timeline4-content h4{ margin:0 0 6px; font-size:1.1rem; color:#1f1f29; }
+  .timeline4-content p{ margin:0; font-size:.92rem; color:#555; }
+</style>
+
+  <div class="activity-box-wrap">
+  <div class="activity-toggle" onclick="toggleActivity(this)">
+    <span class="title"> نشاط 1: مشاهدة فيديو تعليمي</span>
+    <span class="chev">▼</span>
+  </div>
+  <div class="activity-content">
+    <div class="activity-content-inner">
+      <p><strong>الهدف:</strong> التعرف على كيفية  توظيف المستحدثات التكنولوجية في مشروع تخرجك   من خلال الفيديو التوضيحي التالي.</p>
+
+   <div style="text-align:center; margin:20px 0;">
+  <iframe width="100%" height="400"
+          src="https://www.youtube.com/embed/1zbKGb-xUts?si=Ozte3RJD34J5bBfy"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+  </iframe>
+
+</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ✅ العنوان على اليمين -->
+<div style="text-align: right; margin-bottom: 20px;">
+  <div style="background-color: #f8d7da; 
+              border: 1px solid #f5c2c7; 
+              padding: 8px 16px;
+              border-radius: 10px;
+              display: inline-block;
+              font-family: 'Cairo', 'Simplified Arabic', Tahoma, sans-serif;">
+    <h3 style="color: #0a2afd; margin: 0;">
+       3 . المرحلة الثالثة: 	الإنتاج الرقمي لعناصر مشروعات التخرج    
+        </h3>
+        </div>
+         </div>
+<h3 style="color: #333; text-align: justify; font-size: 18px; line-height: 2; font-family: 'Cairo', 'Simplified Arabic', Tahoma, sans-serif;">
+  عملية تصميم وإنتاج جميع مكونات المشروع التعليمي باستخدام أدوات وتقنيات رقمية تتكامل فيما بينها لتحقيق أهداف المشروع، ويشمل  النصوص، والصور، والفيديوهات، والرسوم التوضيحية، والعروض التقديمية، والتفاعلات، والروابط، بحيث تُبنى في قالب واحد مترابط يخدم المتعلم بفعالية.
+  <h3 class="right-title">🔹 فوائد الإنتاج الرقمي لعناصر مشروع التخرج:</h3>
+<img src="images/m4 (2).png" class="zoomable-final" 
+     style="width:800px; max-width:100%; cursor:zoom-in; border-radius:10px; display:block; margin:0 auto;">
+<div id="modalFinal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+                      background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:9999;">
+  <img id="imgFinal" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+  <h3 class="right-title">🔹 مكونات الإنتاج الرقمي:</h3>
+<div class="components-grid">
+  <!-- كارت 1 -->
+  <div class="component-card">
+    <div class="comp-icon">1</div>
+    <h3>المحتوى النصي المنسق</h3>
+    <p>صياغة تعليمية واضحة، خالية من الأخطاء، منسقة بأسلوب تربوي.</p>
+  </div>
+  <!-- كارت 2 -->
+  <div class="component-card">
+    <div class="comp-icon">2</div>
+    <h3>الوسائط المتعددة</h3>
+    <p>صور، رسوم توضيحية، مقاطع فيديو، تسجيلات صوتية داعمة للمفاهيم.</p>
+  </div>
+  <!-- كارت 3 -->
+  <div class="component-card">
+    <div class="comp-icon">3</div>
+    <h3>تصميم بصري موحد</h3>
+    <p>ألوان وخطوط وأيقونات متناسقة تدعم الهوية البصرية للمشروع.</p>
+  </div>
+  <!-- كارت 4 -->
+  <div class="component-card">
+    <div class="comp-icon">4</div>
+    <h3>الأنشطة التفاعلية</h3>
+    <p>مثل اختبارات تفاعلية، بطاقات متحركة، أو محاكاة تعليمية.</p>
+  </div>
+  <!-- كارت 5 -->
+  <div class="component-card">
+    <div class="comp-icon">5</div>
+    <h3>التنقل والتكامل</h3>
+    <p>ربط الأجزاء المختلفة لخلق تجربة تعليمية متماسكة.</p>
+  </div>
+  <!-- كارت 6 -->
+  <div class="component-card">
+    <div class="comp-icon">6</div>
+    <h3>منصة عرض موحدة</h3>
+    <p>مثل Google Sites أو LMS لدمج كل العناصر في تجربة واحدة.</p>
+  </div>
+</div>
+<style>
+  .components-grid {
+  display: flex;            /* استخدم flex بدل grid */
+  flex-wrap: wrap;          /* يخلي الكروت تنتقل للسطر التالي لو مفيش مساحة */
+  justify-content: center;  /* ترتيب الكروت بالوسط */
+  gap: 20px;                /* المسافة بين الكروت */
+  margin: 20px auto;
+  max-width: 1200px;
+}
+.component-card {
+  flex: 0 0 380px;          /* 👈 عرض ثابت لكل كارت */
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px;
+  text-align: right;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.comp-icon{
+  width:45px; height:45px; /* 👈 صغرت الأيقونة */
+  font-size:20px;
+  margin-bottom:10px;
+  background:linear-gradient(135deg, #7b2cbf, #9d4edd);
+  color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+  box-shadow:0 4px 8px rgba(123,44,191,0.25);
+}
+.component-card h3{
+  font-size:1.2rem; 
+  margin:0 0 8px; 
+  color:#222;
+}
+.component-card p{
+  font-size:1rem; 
+  color:#555; 
+  margin:0;
+  line-height:1.6;
+}
+</style>
+
+
+  <h3 class="right-title">🔹 مبادئ الإنتاج الرقمي :</h3>
+<img src="images/m43.png" class="zoomable-final" 
+     style="width:800px; max-width:100%; cursor:zoom-in; border-radius:10px; display:block; margin:0 auto;">
+<div id="modalFinal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+                      background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:9999;">
+  <img id="imgFinal" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+<br>
+
+
+<!-- ========== نشاط سحب وإفلات موسّع داخل بوكس ========== -->
+<div class="activity-box-wrap">
+  <div class="activity-toggle" onclick="toggleActivity(this)" aria-expanded="false">
+    <span class="title">2: نشاط سحب وإفلات  </span>
+    <span class="chev">▼</span>
+  </div>
+
+  <!-- خليه مقفول افتراضيًا -->
+  <div class="activity-content" style="max-height:0; overflow:hidden; transition:max-height .35s ease;">
+    <div class="activity-content-inner">
+
+      <style>
+        .activity { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); max-width:700px; margin:auto; }
+        .draggables, .targets { display:flex; flex-wrap:wrap; gap:15px; margin-bottom:20px; }
+        .draggables div, .targets div { padding:12px 20px; border-radius:8px; background:#f0f3ff; color:#0a2afd; font-weight:bold; cursor:pointer; user-select:none; text-align:center; }
+        .targets div { flex:1; min-width:150px; height:50px; display:flex; align-items:center; justify-content:center; border:2px dashed #0a2afd; background:#fff; }
+        .targets div.correct { background:#4CAF50; color:#fff; border:none; }
+      </style>
+
+      <div class="activity">
+        <h3>اربط كل أداة بالوظيفة الصحيحة في مشروع التخرج:</h3>
+        <div class="draggables">
+          <div draggable="true" id="item1">PowerPoint</div>
+          <div draggable="true" id="item2">Moodle</div>
+          <div draggable="true" id="item3">Canva</div>
+          <div draggable="true" id="item4">Articulate Storyline</div>
+          <div draggable="true" id="item5">Photoshop</div>
+          <div draggable="true" id="item6">Quizizz</div>
+        </div>
+
+        <div class="targets">
+          <div data-answer="PowerPoint">تصميم العروض التقديمية</div>
+          <div data-answer="Moodle">إدارة التعلم والاختبارات</div>
+          <div data-answer="Canva">تصميم الرسوم والإنفوجرافيك</div>
+          <div data-answer="Articulate Storyline">إنتاج الدروس التفاعلية</div>
+          <div data-answer="Photoshop">تعديل الصور والوسائط المتعددة</div>
+          <div data-answer="Quizizz">تصميم اختبارات تفاعلية</div>
+        </div>
+
+        <div class="feedback" style="font-weight:bold;"></div>
+      </div>
+
+      <script>
+        const draggables2 = document.querySelectorAll('.draggables div');
+        const targets2 = document.querySelectorAll('.targets div');
+        let correctCount2 = 0;
+
+        draggables2.forEach(item => {
+          item.addEventListener('dragstart', e => { e.dataTransfer.setData('text', e.target.id); });
+        });
+
+        targets2.forEach(target => {
+  target.addEventListener('dragover', e => e.preventDefault());
+  target.addEventListener('drop', e => {
+    e.preventDefault();
+    const id = e.dataTransfer.getData('text');
+    const dragged = document.getElementById(id);
+    const feedbackEl = target.closest('.activity').querySelector('.feedback');
+    
+    if(dragged.textContent === target.dataset.answer){
+      target.textContent = dragged.textContent;
+      target.classList.add('correct');
+      dragged.style.display = 'none';
+      correctCount2++;
+      feedbackEl.textContent = correctCount2 === targets2.length ? "✅ جميع الإجابات صحيحة!" : "";
+    } else {
+      feedbackEl.textContent = "❌ حاول مرة أخرى.";
+    }
+  });
+});
+
+      </script>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+ 
+<div style="text-align: right; margin-bottom: 20px;">
+  <div style="background-color: #f8d7da; 
+              border: 1px solid #f5c2c7; 
+              padding: 8px 16px;
+              border-radius: 10px;
+              display: inline-block;
+              font-family: 'Cairo', 'Simplified Arabic', Tahoma, sans-serif;">
+    <h3 style="color: #0a2afd; margin: 0;">
+       4. المرحلة الرابعة: 	العرض الأولي للعناصر المنتجة لمشروع التخرج       </h3>
+        </div>
+         </div>
+<h3 style="color: #333; text-align: justify; font-size: 18px; line-height: 2; font-family: 'Cairo', 'Simplified Arabic', Tahoma, sans-serif;">
+العرض الأولي للمشروع هو مرحلة تشخيصية وتجريبية يقوم فيها الطالب أو الفريق بتقديم نسخة مبدئية أمام المشرف أو الأقران أو لجنة تقييم جزئية. الهدف منه هو الحصول على تغذية راجعة مبكرة وملاحظات بنّاءة قبل الانتقال إلى المرحلة النهائية، مما يساعد على تحسين الفكرة والمنهجية والمنتج.
+
+ <h3 class="right-title" style="margin-top:10px;">🔹 أهمية العرض الأولي للعناصر المنتجة لمشروع التخرج:</h3>
+  <div style="text-align:center;">
+    <img src="images/arabic-45.png" class="zoomable-final"
+         style="width:800px; max-width:100%; cursor:zoom-in; border-radius:10px; display:inline-block;">
+  </div>
+
+ <h3 class="right-title" style="margin-top:10px;">🔹 أنواع العرض الأولي  للعناصر المنتجة لمشروع التخرج:</h3>
+<div class="presentation-types">
+  <div class="types-container">
+    <div class="type-box">
+      <h3>عرض شفهي</h3>
+      <p>باستخدام شرائح PowerPoint / Canva / Google Slides</p>
+    </div>
+    <div class="type-box">
+      <h3>عرض عملي</h3>
+      <p>تجربة النسخة التجريبية أو واجهات التطبيق أمام الحضور</p>
+    </div>
+    <div class="type-box">
+      <h3>عرض بوستري</h3>
+      <p>ملصق علمي يوضح فكرة المشروع ومراحله</p>
+    </div>
+    <div class="type-box">
+      <h3>عرض مرئي</h3>
+      <p>فيديو قصير يوضح الفكرة والتنفيذ</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.presentation-types{
+  text-align:center;
+  margin:40px auto;
+  font-family:"Cairo",sans-serif;
+}
+.types-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+}
+.type-box{
+  background:#fff;
+  border-radius:20px;
+  width:230px;
+  padding:20px 15px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.1);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.icon{
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+.type-box h3{
+  color:#7b2cbf;
+  margin-bottom:10px;
+}
+.type-box p{
+  font-size:.95rem;
+  color:#444;
+  line-height:1.5;
+}
+</style>
+
+
+ <h3 class="right-title" style="margin-top:10px;">🔹 مكونات العرض  للعناصر المنتجة لمشروع التخرج:</h3>
+<section class="timeline5-section">
+  <div class="timeline5">
+    <!-- 1 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">1</div>
+      <div class="timeline5-content">
+        <h3>مقدمة مختصرة</h3>
+        <p>تعريف سريع بالمشروع، اسم الفريق والمشرف، وفكرته وأهدافه.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">2</div>
+      <div class="timeline5-content">
+        <h3>ما تم إنجازه</h3>
+        <p>إبراز النسخة التجريبية (Prototype)، الواجهات الرئيسية، أو نموذج من المحتوى التعليمي.</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">3</div>
+      <div class="timeline5-content">
+        <h3>الأهداف</h3>
+        <p>سواء كانت تعليمية أو تقنية، توضح الغاية من المشروع.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">4</div>
+      <div class="timeline5-content">
+        <h3>المنهجية</h3>
+        <p>عرض الخطوات والأدوات المستخدمة في التنفيذ.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">5</div>
+      <div class="timeline5-content">
+        <h3>النتائج المبدئية</h3>
+        <p>ما تحقق حتى الآن من مخرجات.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">6</div>
+      <div class="timeline5-content">
+        <h3>التحديات والحلول</h3>
+        <p>أهم العقبات التي واجهت الفريق وكيف تم التغلب عليها.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">7</div>
+      <div class="timeline5-content">
+        <h3>التوصيات والخاتمة</h3>
+        <p>دروس مستفادة أو مقترحات للتطوير المستقبلي.</p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="timeline5-item">
+      <div class="timeline5-icon">8</div>
+      <div class="timeline5-content">
+        <h3>التفاعل مع الحضور</h3>
+        <p>دعوة للملاحظات والأسئلة والإجابة عنها باحترافية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.timeline5-section{
+  font-family:"Cairo",sans-serif;
+  direction: rtl;
+  margin: 40px auto;
+  max-width: 850px;
+}
+.timeline5{
+  position: relative;
+  padding-right: 0;
+}
+.timeline5-item{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+.timeline5-icon{
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background:#0a2afd;
+  color:#fff;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  margin-left:15px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+.timeline5-content{
+  background:#f9f9ff;
+  padding:15px 18px;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+  flex:1;
+  transition: transform 0.2s ease;
+}
+
+.timeline5-content h3{
+  margin:0 0 6px;
+  color:#0a2afd;
+  font-size:1.1rem;
+}
+.timeline5-content p{
+  margin:0;
+  color:#444;
+  line-height:1.6;
+}
+</style>
+
+
+<h3 class="right-title" style="margin-top:10px;">🔹 المهارات المطلوبة للعرض الأولي  للعناصر المنتجة لمشروع التخرج :</h3>
+<section class="skills-cloud-section">
+  <div class="skills-cloud">
+    <!-- الصورة في الوسط -->
+    <div class="skills-image">
+      <img src="images/project presentation.png" alt="presentation skills" />
+    </div>
+    <!-- المهارات -->
+    <span class="skill">التحدث بثقة ووضوح لفترة زمنية من 7 ألي 10 دقائق</span>
+    <span class="skill">صمم الشرائح مختصرة ومدعومة بالوسائط المتعددة</span>
+    <span class="skill">التحكم في لغة الجسد ونبرة الصوت</span>
+    <span class="skill">ركّز على الفكرة والمنهجية أكثر من المنتج النهائي</span>
+    <span class="skill">اطلب الملاحظات بوضوح من البداية</span>
+    <span class="skill">كن مستعدًا لأسئلة حول القرارات والتحديات</span>
+  </div>
+</section>
+
+<style>
+.skills-cloud-section {
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.skills-cloud-section h3 {
+  color: #0a2afd;
+  margin-bottom: 40px;
+}
+
+.skills-cloud {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  margin: auto;
+}
+
+.skills-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 40%;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.skills-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skills-cloud .skill {
+  position: absolute;
+  width: 230px;
+  padding: 15px 20px;
+  background: #f0f3ff;
+  color: #0a2afd;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  line-height: 1.5;
+  cursor: default;
+}
+
+.skills-cloud .skill:hover {
+  background: #0a2afd;
+  color: #fff;
+}
+</style>
+
+<script>
+// توزيع المهارات حول الصورة تلقائيًا
+const skills = document.querySelectorAll('.skills-cloud .skill');
+const radius = 280; // نصف القطر للتوزيع
+const centerX = 350; // مركز الحاوية (نصف عرض container)
+const centerY = 350; // نصف ارتفاع container
+
+const total = skills.length;
+skills.forEach((skill, i) => {
+  const angle = (i / total) * (2 * Math.PI); // زاوية التوزيع
+  const x = centerX + radius * Math.cos(angle) - skill.offsetWidth/2;
+  const y = centerY + radius * Math.sin(angle) - skill.offsetHeight/2;
+  skill.style.left = `${x}px`;
+  skill.style.top = `${y}px`;
+});
+</script>
+
+
+  <!-- ========== النشاط النهائي للموديول الثاني ========== -->
+<div class="activity-box-wrap full-width creative-final">
+  <div class="activity-toggle" onclick="toggleActivity(this)" aria-expanded="false">
+    <span class="title"> النشاط النهائي للموديول الرابع</span>
+    <span class="chev">▼</span>
+  </div>
+
+  <div class="activity-content" style="max-height:0; overflow:hidden; transition:max-height .35s ease;">
+    <div class="activity-content-inner" style="text-align:center;">
+      <p style="font-size:18px; margin-bottom:30px;">
+        بعد دراستك للموديول  الرابع( تنفيذ وإنتاج مشروع التخرج ) المطلوب منك تنفيذ النشاط الخاص بالموديول مع توفير الدعم لك من المشرف و أقرانك . <br><br>
+        برجاء الضغط على الزر أدناه لتسليم النشاط النهائي:
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXSc_h4IEWprfLB-XOCdKTQkJCyCqCBX62HMUaK-cRtaTceQ/viewform?usp=header"
+         target="_blank"
+         class="creative-submit-btn">
+          تسليم نشاط الموديول الرابع 
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="module-description" onclick="toggleContent(this)">
+  الاختبار البعدي  للموديول الرابع <i class='bx bx-chevron-down'></i>
+</div>
+<div class="accordion-content">
+    <h4 style="color: #0a2afd;">
+    يمكنك أداء اختبار الموديول الرابع:
+
+    </h4>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPXnONa-1qhJILZGOHenkJoBeMAq12b_v7CuFnE00CyaCCKg/viewform?usp=header"
+
+     target="_blank" 
+     class="cta-button">
+    اضغط هنا لبدء الاختبار
+  </a>
+</div>
+</div>
+
+    </section>
+     <!-- ✅ نص تشجيعي وزر ثابت أسفل الصفحة -->
+<p class="note-text">
+  ✅ بعد إنهائك لهذا الموديول،  انتقل إلى <strong>الموديول الرابع</strong> لتكملة رحلتك في إنتاج مشروع التخرج.
+</p>
+
+
+<!-- ✅ زر البدء -->
+    <a href="module5 - pre test.html" class="cta-button">  الموديول الخامس </a>
+ <br>
+<br>
+
+<!-- ✅ زر الرجوع للموديول السابق -->
+<a href="module4 - pre test .html" class="floating-nav-btn prev" title="الموديول السابق">
+  <i class='bx bx-chevron-right'></i>
+</a>
+
+<!-- ✅ زر التقدم للموديول التالي -->
+<a href="module5 - pre test.html" class="floating-nav-btn next" title="الموديول التالي">
+  <i class='bx bx-chevron-left'></i>
+</a>
+
+  </main>
+
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="الرجوع للأعلى">
+  ↑
+</button>
+<script>
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.onscroll = function () {
+    scrollTopBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+      ? "block" : "none";
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
+</script>
+<script>
+  // =========================
+  // فتح/إغلاق النشاط
+  // =========================
+  function toggleActivity(toggleBtn) {
+    toggleBtn.classList.toggle('open');
+    let content = toggleBtn.nextElementSibling;
+    content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+  }
+
+  // =========================
+  // فتح/إغلاق محتوى الـ avatar row
+  // =========================
+  const avatarRows = document.querySelectorAll('.avatar-row');
+  avatarRows.forEach(row => {
+    row.addEventListener('click', () => {
+      row.classList.toggle('active'); // يفتح أو يقفل المحتوى لكل صورة مستقل
+    });
+  });
+
+  // =========================
+  //// فتح/إغلاق المودال لأي صورة قابلة للتكبير
+const zoomableImages = document.querySelectorAll('.zoomable-final');
+const modalFinal = document.getElementById('modalFinal');
+const imgModalFinal = document.getElementById('imgFinal');
+
+zoomableImages.forEach(img => {
+  img.addEventListener('click', () => {
+    modalFinal.style.display = 'flex';
+    imgModalFinal.src = img.src;
+  });
+});
+
+// اغلاق المودال عند الضغط خارج الصورة
+modalFinal.addEventListener('click', e => {
+  if (e.target === modalFinal) modalFinal.style.display = 'none';
+});
+
+  // =========================
+  // تعديل موقع شريط التنقل حسب ارتفاع اللوغو
+  // =========================
+  const logosBar = document.querySelector('.logos-bar');
+  const navBar = document.querySelector('nav');
+
+  function adjustNavPosition() {
+    const height = logosBar.offsetHeight;
+    navBar.style.top = `${height}px`;
+  }
+
+  window.addEventListener('load', adjustNavPosition);
+  window.addEventListener('resize', adjustNavPosition);
+
+  // =========================
+  // فتح/إغلاق المحتوى الأكوردين
+  // =========================
+  function toggleContent(element) {
+    element.classList.toggle("open");
+    const content = element.nextElementSibling;
+    if (content && content.classList.contains("accordion-content")) {
+      content.classList.toggle("expanded");
+    }
+  }
+
+  // =========================
+  // إضافة class عند تحميل الصفحة (لأغراض CSS/animation)
+  // =========================
+  window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
+</script>
+<footer>
+  <p class="footer-info">
+    <span class="uni">جامعة دمياط -</span>
+    <span class="faculty">كلية التربية -</span>
+    <span class="dept">قسم تكنولوجيا التعليم</span>
+    <span class="name"> - مي محمد حافظ سبلة</span>
+    <span class="job">- معيدة بقسم تكنولوجيا التعليم</span>
+  </p>
+  <p class="footer-year">© 2025</p>
+</footer>
+
+
+<!-- ✅ زر المساعد الذكي في الشمال -->
+<div class="chatbot-icon" id="cbIcon" title="وكيل الدعم">💬</div>
+
+<!-- ✅ نافذة الوكيل الذكي -->
+<div class="chatbot-window" id="cbWin" dir="rtl">
+  <div class="chatbot-header">
+    <span>وكيل الدعم الذكي</span>
+    <button class="chatbot-close" id="cbClose">✖</button>
+  </div>
+  <iframe src="afatar.html" 
+          style="width:100%; height:calc(100% - 40px); border:none;"></iframe>
+</div>
+
+<style>
+  /* أيقونة المساعد */
+  .chatbot-icon{
+    position:fixed; bottom:90px; left:20px; 
+    width:60px; height:60px; border-radius:50%;
+    background:#6a0dad; color:#fff; 
+    display:flex; align-items:center; justify-content:center;
+    font-size:28px; box-shadow:0 6px 16px rgba(0,0,0,.15); 
+    cursor:pointer; z-index:9999; transition:.25s;
+  }
+  .chatbot-icon:hover{ transform:scale(1.08); background:#8a2be2; }
+
+  /* نافذة المساعد */
+  .chatbot-window{
+    position:fixed; bottom:110px; left:20px;
+    width:400px; max-width:92vw; height:600px;
+    background:#fff; border-radius:16px;
+    box-shadow:0 14px 34px rgba(0,0,0,.18);
+    overflow:hidden; z-index:9999; 
+    display:none; flex-direction:column;
+  }
+  .chatbot-window.open{ display:flex; }
+
+  /* الهيدر */
+  .chatbot-header{
+    background:linear-gradient(135deg,#6a0dad,#8a2be2);
+    color:#fff; padding:10px 12px;
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; font-weight:400;
+  }
+  .chatbot-close{
+    border:none; background:transparent; 
+    color:#fff; font-size:18px; cursor:pointer;
+  }
+</style>
+<script>
+  const icon = document.getElementById("cbIcon");
+  const win  = document.getElementById("cbWin");
+  const closeBtn = document.getElementById("cbClose");
+
+  icon.addEventListener("click", () => {
+    win.classList.toggle("open");
+  });
+  closeBtn.addEventListener("click", () => {
+    win.classList.remove("open");
+  });
+</script>
+</body>
+</html>

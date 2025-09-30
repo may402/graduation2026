@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>الموديول الثاني - التخطيط لمشروع التخرج</title>
+  <link rel="icon" href="images/graduation.png" />
+  <!-- وسم مهم عشان التنسيقات تشتغل صح على الموبايل -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- أيقونات -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- خط كايرو -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ملف التنسيقات -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <style>
+    /* ✅ العنوان */
+    .intro-heading {
+  text-align: center;
+  padding: 10px 20px;   /* قللت البادينج من 40px إلى 10px */
+  margin-bottom: 10px;  /* مسافة صغيرة بين العنوان والكروت */
+}
+
+.support-container {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;           /* شيلت البادينج */
+  margin: 0;            /* شيلت المارجن */
+}
+
+
+.support-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 18px;
+  width: 230px;              /* عرض ثابت مناسب */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform .3s, box-shadow .3s;
+  text-align: center;
+}
+
+    .support-card h3 {color:#6a0dad;}
+    .support-card i {font-size:40px; margin-bottom:15px; color:#b92272;}
+
+    /* ✅ Accordion للأسئلة الشائعة */
+    .faq {max-width:700px; margin:40px auto;}
+    .faq-item {background:#fff; border-radius:10px; margin-bottom:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    .faq-question {padding:15px; cursor:pointer; font-weight:bold; color:#6a0dad;}
+    .faq-item.active .faq-answer {display:block;}
+
+    /* ✅ تعديل علشان المحتوى ينزل تحت الناف */
+    main {
+      margin-top: 70px; /* عدلي الرقم حسب ارتفاع الشريطين */
+    }
+  </style>
+
+<body>
+
+  <!-- ✅ شريط الشعارات -->
+  <div class="logos-bar">
+    <div style="display: flex; gap: 15px;">
+      <img src="images/damietta.png" alt="شعار الجامعة" />
+      <img src="images/LOGO.jpg" alt="شعار الكلية" />
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="images/may.jpg" alt="مي" class="my-pic" />
+      <div style="text-align: right; margin-right: 10px;">
+        <p style="margin: 0; font-weight: bold; color: #b92272;font-size: 10px"> أدوات التواصل</p>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <a href="https://www.facebook.com/share/19LJPEeQQN/" target="_blank" title="فيسبوك" style="color: #3b5998; font-size: 20px;"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="https://wa.me/201062309203" target="_blank" title="واتساب" style="color: #25D366; font-size: 20px;"><i class='bx bxl-whatsapp'></i></a>
+          <a href="mailto:maysabla5557@gmail.com" title="البريد الإلكتروني" style="color: #EA4335; font-size: 20px;"><i class='bx bxl-gmail'></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ شريط التنقل -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">الصفحة الرئيسية</a></li>
+      <li><a href="instructions.html">تعليمات الاستخدام</a></li>
+      <li><a href="#">أهداف البيئة</a></li>
+      <li><a href="#">الاختبارات</a></li>
+      <li><a href="#">موديولات البيئة</a></li>
+      <li><a href="contact-us.html" class="active">اتصل بنا</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ المحتوى -->
+  <main>
+    <section class="intro-heading">
+      <h2>كيف يمكننا مساعدتك؟</h2>
+      <p>هذه الصفحة مخصصة لتقديم الدعم التشاركي لك،  من المشرف أو من أقرانك.</p>
+    </section>
+
+    <!-- ✅ الكروت -->
+    <div class="support-container">
+      <div class="support-card">
+        <i class='bx bxs-chalkboard'></i>
+        <h3>دعم المشرف</h3>
+        <p>🕒 يوميًا من 5م إلى 7م<br>
+        من خلال روابط وسائل التواصل <br></p>
+        <a href="https://www.facebook.com/share/19LJPEeQQN/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="https://wa.me/201062309203" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="mailto:maysabla5557@gmail.com"><i class='bx bxl-gmail'></i></a>
+      </div>
+
+      <div class="support-card">
+        <i class='bx bxs-group'></i>
+        <h3>دعم الأقران</h3>
+        <p>🧑‍🤝‍🧑 اختر زميلًا<br>
+        من خلال جروب الواتساب <br></p>
+        <a href="https://chat.whatsapp.com/FWkHKFGjj5GAJ54TVR9fyh?mode=ems_copy_c" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+      </div>
+    </div>
+
+    <!-- ✅ الأسئلة الشائعة -->
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question"> يمكنك إرسال رسالة بريدية، وسيتم الرد في أقرب وقت.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ✅ الفوتر -->
+  <footer>
+    <p class="footer-info">
+      <span class="uni">جامعة دمياط -</span>
+      <span class="faculty">كلية التربية -</span>
+      <span class="dept">قسم تكنولوجيا التعليم</span>
+      <span class="name"> - مي محمد حافظ سبلة</span>
+      <span class="job">- معيدة بقسم تكنولوجيا التعليم</span>
+    </p>
+    <p class="footer-year">© 2025</p>
+  </footer>
+
+  <!-- ✅ السكربتات -->
+  <script>
+    // Accordion
+    document.querySelectorAll(".faq-question").forEach(q=>{
+      q.addEventListener("click", ()=>{
+        q.parentElement.classList.toggle("active");
+      });
+    });
+
+    // ضبط موضع الناف
+    const logosBar = document.querySelector('.logos-bar');
+    const navBar = document.querySelector('nav');
+    function adjustNavPosition() {
+      const height = logosBar.offsetHeight;
+      navBar.style.top = `${height}px`;
+    }
+    window.addEventListener('load', adjustNavPosition);
+    window.addEventListener('resize', adjustNavPosition);
+
+    // تأثير تحميل الصفحة
+    window.addEventListener("load", function () {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+</html>

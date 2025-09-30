@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الوكيل الذكي للمحتوى – مشروعات التخرج</title>
+  <style>
+    :root {
+      --brand: #6a0dad;
+      --brand-2: #a26ad8;
+      --bg: #faf7ff;
+      --text: #2b2b2b;
+      --muted: #777;
+      --card: #ffffff;
+      --shadow: 0 8px 24px rgba(0,0,0,.08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 16px;
+    }
+    .agent {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .header {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      justify-content: center; text-align: center;
+    }
+    .title .logo {
+      width: 50px; height: 50px; display: grid; place-items: center; border-radius: 14px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff; font-weight: 800; font-size: 18px;
+      box-shadow: var(--shadow);
+    }
+    .title h1 { font-size: 22px; margin: 0; color: var(--brand); }
+    .muted { color: var(--muted); font-size: 14px; }
+
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1.2fr .8fr; } }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #eee6ff;
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .card h2 { font-size: 18px; margin: 0 0 10px; color: var(--brand); }
+
+    .stage-list {
+      display: grid; grid-template-columns: repeat(auto-fit,minmax(120px,1fr)); gap: 8px;
+    }
+    .stage {
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #f6efff;
+      border: 1px solid #eadbff;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      transition: background .2s ease, border-color .2s ease;
+    }
+    .stage.active {
+      background: #efe7ff;
+      border-color: var(--brand);
+      outline: 2px solid #e2d4ff;
+    }
+
+    .tasks { display: grid; gap: 8px; }
+    .task {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 10px; background: #fbf9ff;
+      border: 1px dashed #e7d9ff; border-radius: 12px;
+    }
+    .task input { margin-top: 2px; }
+
+    .tag {
+      display: inline-block; padding: 4px 8px; border-radius: 999px;
+      background: #f1f5f9; color: #334155; font-size: 12px;
+    }
+
+    .advice {
+      background: #fff0f7;
+      border: 1px solid #ffd6e7;
+      border-radius: 12px;
+      padding: 12px;
+      font-weight: 600;
+      color: #a83279;
+    }
+
+    details { background: #fcfcff; border: 1px solid #ecebff; border-radius: 12px; padding: 10px 12px; }
+    details summary { cursor: pointer; font-weight: 700; color: var(--brand); }
+
+    .footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="agent">
+      <div class="header">
+        <div class="title">
+          <div style="display: flex; align-items: center; gap: 10px;">
+  <div class="logo">AI</div>
+  <h1>المساعد الذكي لمشروعك</h1>
+</div>
+
+            <div class="muted">اختر المرحلة لتتعرف على المهام ونصيحة اليوم.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- العمود الرئيسي -->
+        <div class="col-main">
+          <div class="card">
+            <h2>📌 مسار المشروع</h2>
+            <div class="stage-list" id="stageList"></div>
+          </div>
+
+          <div class="card">
+            <h2>✅ مهام هذه المرحلة</h2>
+            <div id="tasks" class="tasks"></div>
+          </div>
+        </div>
+
+        <!-- العمود الجانبي -->
+        <div class="col-side">
+          <div class="card advice" id="advice"></div>
+
+          <details class="card">
+            <summary>❓ أسئلة شائعة</summary>
+            <div style="margin-top:8px; display: grid; gap:8px;">
+              <div><strong>كيف أضمن أن أهداف مشروعي قابلة للقياس؟</strong><br><span class="muted">استخدم أفعال سلوكية واضحة وحدد مؤشرات كمية أو نوعية.</span></div>
+              <div><strong>ما المطلوب عند التسليم النهائي؟</strong><br><span class="muted">نسخة نهائية للمشروع + وثائق التسليم + عرض تقديمي.</span></div>
+              <div><strong>نصائح للعرض الاحترافي؟</strong><br><span class="muted">التزم بالوقت، استخدم شرائح واضحة، ودرّب نفسك مسبقًا.</span></div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="footer">© وكيل المحتوى – يعمل محليًا بدون خدمات خارجية</div>
+    </div>
+  </div>
+
+  <script>
+    const STAGES = [
+      { id: 'idea',    name: 'الفكرة' },
+      { id: 'design',  name: 'التصميم' },
+      { id: 'build',   name: 'الإنتاج' },
+      { id: 'deliver', name: 'التسليم والتقييم' }
+    ];
+
+    const CONTENT = {
+      idea: {
+        tasks: [
+          { t: 'صياغة فكرة واضحة ومرتبطة بالتخصص.', tag: 'قابلية التطبيق' },
+          { t: 'تحديد المشكلة والأهداف قابلة للقياس.', tag: 'منهج علمي' },
+          { t: 'اختيار نوع المشروع (بحثي/إبداعي/ميداني).', tag: 'تصنيف' }
+        ]
+      },
+      design: {
+        tasks: [
+          { t: 'إعداد خطة زمنية وتوزيع الأدوار.', tag: 'خطة' },
+          { t: 'تصميم هيكل المحتوى والواجهات.', tag: 'تصميم' },
+          { t: 'تحديد الأدوات والتقنيات.', tag: 'أدوات' }
+        ]
+      },
+      build: {
+        tasks: [
+          { t: 'توظيف تقنيات وبرمجيات تعليمية.', tag: 'تقنيات' },
+          { t: 'إنتاج نسخة رقمية متكاملة.', tag: 'إنتاج' },
+          { t: 'التعاون الفعال ضمن الفريق.', tag: 'عمل جماعي' }
+        ]
+      },
+      deliver: {
+        tasks: [
+          { t: 'إعداد المشروع للتسليم النهائي.', tag: 'تسليم' },
+          { t: 'العرض التقديمي أمام لجنة.', tag: 'عرض' },
+          { t: 'تقييم ذاتي وأقران.', tag: 'تقييم' },
+          { t: 'إعداد وثائق المراجع والملحقات.', tag: 'وثائق' }
+        ]
+      }
+    };
+
+    const ADVICES = [
+      "قسّم عملك لمهام صغيرة لتنجز أسرع.",
+      "دوّن تقدمك يوميًا حتى لو خطوة بسيطة.",
+      "استشر مشرفك عند مواجهة صعوبة.",
+      "تعاون مع فريقك بدل العمل الفردي."
+    ];
+
+    const stageList = document.getElementById('stageList');
+    const tasksEl   = document.getElementById('tasks');
+    const adviceEl  = document.getElementById('advice');
+
+    let currentStage = localStorage.getItem('stage') || 'idea';
+
+    function renderStages() {
+      stageList.innerHTML = '';
+      STAGES.forEach(s => {
+        const d = document.createElement('div');
+        d.className = 'stage' + (s.id === currentStage ? ' active' : '');
+        d.textContent = s.name;
+        d.onclick = () => { currentStage = s.id; localStorage.setItem('stage', currentStage); renderStages(); renderContent(); };
+        stageList.appendChild(d);
+      });
+    }
+
+    function renderContent() {
+      tasksEl.innerHTML = '';
+      CONTENT[currentStage].tasks.forEach((task, idx) => {
+        const div = document.createElement('div');
+        div.className = 'task';
+        div.innerHTML = `
+          <input type="checkbox" id="t${currentStage}-${idx}">
+          <label for="t${currentStage}-${idx}" style="flex:1;">${task.t}</label>
+          <span class="tag">${task.tag}</span>
+        `;
+        tasksEl.appendChild(div);
+      });
+
+      adviceEl.textContent = ADVICES[Math.floor(Math.random() * ADVICES.length)];
+    }
+
+    renderStages();
+    renderContent();
+  </script>
+</body>
+</html>
